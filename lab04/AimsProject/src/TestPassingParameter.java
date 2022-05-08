@@ -20,13 +20,13 @@ public class TestPassingParameter {
 	}
 	
 	public static void swapTitle(DigitalVideoDisc o1, DigitalVideoDisc o2) {
-		String a = o1.getTitle();
-		o1.setTitle(o2.getTitle());
-		o2.setTitle(a);
+//		String a = o1.getTitle();
+//		o1.setTitle(o2.getTitle());
+//		o2.setTitle(a);
 		
-		// DigitalVideoDisc tmp = o1;
-		// o1= o2;
-		// o2 = tmp;
+		DigitalVideoDisc tmp = o1;
+		o1= o2;
+		o2 = tmp;
 	}
 	public static void changeTitle(DigitalVideoDisc dvd, String title) {
 		String oldTitle = dvd.getTitle();
