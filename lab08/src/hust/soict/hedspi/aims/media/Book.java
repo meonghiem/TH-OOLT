@@ -17,7 +17,7 @@ public class Book extends Media{
 	Map<String,Integer> wordFrequency;
 	
 	public void processContent() {
-		String []contentSplit= content.split(" ");
+		String []contentSplit= content.split("\\s|\\.");
 		this.contentTokens = new ArrayList<>(Arrays.asList(contentSplit));
 		Collections.sort(this.contentTokens);
 		wordFrequency =

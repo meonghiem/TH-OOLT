@@ -29,6 +29,7 @@ public class DigitalVideoDisc extends Disc implements Playable,Comparable {
 	}
 	
 	public int compareTo(Object obj){
+		System.out.println("abc");
 		Media o = (Media) obj;
 //		return this.title.compareTo(o.getTitle());
 		if(this.getCost() < o.getCost()) return -1;

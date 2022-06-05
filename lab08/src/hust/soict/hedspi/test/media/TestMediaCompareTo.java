@@ -13,13 +13,13 @@ public class TestMediaCompareTo {
 
 	public static void main(String[] args) {
 		ArrayList<Media> media = new ArrayList<Media>();
-		DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", 19.95f, 87, "Roger Allers");
-		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", 24.95f, 124, "George Lucas");
+		DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", 24.95f, 87, "Roger Allers");
+		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", 25.95f, 124, "George Lucas");
 		ArrayList <String> authors = new ArrayList<String>();
 		authors.add("Sugar daddy");
 		authors.add("Sugar baby");
-		Book book1 = new Book("Hands-on","Documentory",19.65f,authors);
-		Book book2 = new Book("Math","Documentory",20.5f,authors);
+		Book book1 = new Book("Hands-on","Documentory",20.5f,authors);
+		Book book2 = new Book("Zath","Documentory",18.5f,authors);
 //		media.add(dvd1);
 //		media.add(dvd2);
 //		media.add(book1);
@@ -52,6 +52,7 @@ public class TestMediaCompareTo {
 		System.out.println("The DVDs after sort in the order  are:");
 		while(iterator.hasNext()){
 			System.out.println(((Media)iterator.next()).getCost());
+//			System.out.println(((Media)iterator.next()).getTitle());
 		}
 		
 	}
