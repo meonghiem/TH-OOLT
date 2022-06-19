@@ -58,6 +58,13 @@ public abstract class Media implements Comparable{
 	}
 	
 	public int compareTo(Object obj) {
+		try {
+			Media o = (Media)obj;
+		} catch (ClassCastException e){
+			System.err.println("ERROR :" + e + " - Unable to cast type!");
+		} catch (NullPointerException e){
+			System.err.println("ERROR :" + e + " - Pointing to null object");
+		}
 		Media o = (Media)obj;
 		return this.title.compareTo(o.getTitle());
 	}
